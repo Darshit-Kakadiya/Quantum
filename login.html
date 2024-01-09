@@ -16,36 +16,45 @@
     </nav>
     <div class="container">
       <div class="form-title">
-        <img src="./assets/icons/back.svg" />
+        <a href="#" class="form-back"><img src="./assets/icons/back.svg" /></a>
         <span> Log in with Quantum</span>
       </div>
       <div class="role-selector">
         <div class="role">
-          <img src="./assets/icons/radio-button-on.svg" />
+          <input
+            type="radio"
+            class="green-radio"
+            name="role"
+            value="District"
+            checked
+          />
           <label for="District">District</label>
         </div>
         <div class="role">
-          <img src="./assets/icons/radio-button-off.svg" />
+          <input
+            type="radio"
+            class="green-radio"
+            name="role"
+            value="Independent school"
+          />
           <label for="Independent school">Independent school</label>
         </div>
       </div>
       <div class="address-selector">
         <div class="label">State<span class="required-mark">*</span></div>
-        <div class="area-field">
-          <span class="area">Alabama</span>
-          <img src="./assets/icons/arrow-down.svg" />
-        </div>
+        <select class="area-field">
+          <option class="area">Alabama</option>
+        </select>
       </div>
       <div class="address-selector">
         <div class="label">District<span class="required-mark">*</span></div>
-        <div class="area-field">
-          <span class="area">Alabama School District</span>
-          <img src="./assets/icons/arrow-down.svg" />
-        </div>
+        <select class="area-field">
+          <option class="area">Alabama School District</option>
+        </select>
       </div>
       <div class="input-field">
         <input type="text" placeholder="Username/Email ID*" />
-        <div class="input-forgot">FORGOT USERNAME?</div>
+        <a href="#" class="input-forgot">FORGOT USERNAME?</a>
       </div>
       <div class="input-password-field">
         <div class="password-field">
@@ -53,14 +62,14 @@
             src="./assets/icons/preview.svg"
           />
         </div>
-        <div class="input-forgot">FORGOT PASSWORD?</div>
+        <a href="#" class="input-forgot">FORGOT PASSWORD?</a>
       </div>
       <div class="remember-field">
-        <img src="./assets/icons/checkbox-checked.svg" />
+        <input type="checkbox" value="Remember" checked />
         <span>Remember Me</span>
       </div>
       <div class="submit">
-        <span>LOG IN</span>
+        <button>LOG IN</button>
       </div>
     </div>
     <div>

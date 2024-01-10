@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
-
   font-family: "QuickSand";
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.medium {
+  font-weight: 500;
 }
 
 body {
@@ -43,9 +53,31 @@ body {
   gap: 8px;
 }
 
+.links {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.link {
+  color: #1f7a54;
+  font-size: 14px;
+  padding: 0px 8px;
+}
+
+.divider {
+  border-right: 1px solid #0000001f;
+}
+
+.input {
+  border: none;
+}
 .container {
   display: flex;
   width: 420px;
+  height: max-content;
   background-color: #ffffff;
   margin: 50px auto;
   border-top: #3ac7ec 4px solid;
@@ -83,7 +115,10 @@ body {
   gap: 8px;
   align-items: center;
 }
-
+.role > label {
+  font-size: 16px;
+  color: #333333;
+}
 .green-radio {
   accent-color: #1f7a54;
   height: 20px;
@@ -174,7 +209,7 @@ body {
   margin-top: 32px;
 }
 
-.remember-field>input{
+.remember-field > input {
   height: 20px;
   width: 20px;
   accent-color: #1f7a54;
@@ -203,22 +238,4 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 3px 5px #0000003d;
-}
-
-.links {
-  margin-top: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.link {
-  color: #1f7a54;
-  font-size: 14px;
-  padding: 0px 8px;
-}
-
-.divider {
-  border-right: 1px solid #0000001f;
 }

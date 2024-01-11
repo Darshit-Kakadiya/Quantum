@@ -1,0 +1,200 @@
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$greenColor: #3fd28b;
+$greenText: #1f7a54;
+$backText: #222222;
+$greyText: #666666;
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Quicksand";
+  margin: 0px;
+  padding: 0px;
+  font-family: "QuickSand";
+  font-weight: 500;
+  color: $greyText;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  height: 100vh;
+  background-color: #eeeeee;
+}
+
+.navbar {
+  background: url("../assets/header\ pattern\ svg.svg") center/cover no-repeat;
+  background-color: #25313f;
+  background-blend-mode: overlay;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 28px;
+}
+
+.cyan-line {
+  margin: 0px;
+  width: 100%;
+  border: 2px solid #31b9e4;
+}
+
+.links {
+    margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  color: $greenText;
+  text-align: center;
+  margin-bottom: 16px;
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $greenText;
+  }
+  .divider {
+    border-left: 1px solid #0000001f;
+    padding-left: 8px;
+  }
+}
+
+.site-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #e0e1e1;
+  padding: 8px;
+}
+
+.footer-text {
+  font-size: 12px;
+  border-left: 1px solid #0000001f;
+  padding-left: 16px;
+  color: #616161;
+  span {
+    font-weight: 700;
+    padding: 0px 8px;
+  }
+}
+
+.form-container {
+  display: flex;
+  width: 420px;
+  height: max-content;
+  margin: auto;
+  margin-top: 50px;
+  background-color: $whiteColor;
+  flex-direction: column;
+  padding: 16px 32px;
+  border-top: #3ac7ec 2px solid;
+}
+
+.form-title {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-top: 0px;
+  a {
+    display: flex;
+    align-items: center;
+  }
+  span {
+    color: #222222;
+    margin: auto;
+  }
+}
+.role-selector {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+  span {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    input[type="radio"] {
+      width: 20px;
+      height: 20px;
+      accent-color: #1f7a54;
+      cursor: pointer;
+    }
+    label {
+      color: #333333;
+    }
+  }
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  label {
+    font-size: 12px;
+    font-weight: 500;
+    color: $greyText;
+  }
+  select {
+    margin-top: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #0000001f;
+    color: $backText;
+    font-size: 16px;
+    option {
+      background: transparent;
+      color: $backText;
+    }
+  }
+  input {
+    margin-top: 5px;
+    width: auto;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #0000001f;
+    color: $backText;
+    font-size: 16px;
+  }
+  a {
+    text-align: right;
+    margin-top: 5px;
+    font-size: 14px;
+    color: $greenText;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  span {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.remember-field {
+    margin-top: 24px;
+  display: flex;
+  align-items: center;
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #1f7a54;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+}
+
+.submit{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    button {
+        height: 40px;
+        border: none;
+        background-color: #3FD28B;
+        color: #1F2834;
+        font-size: 14px;
+        cursor: pointer;
+        padding: 0px 85px;
+    }
+}

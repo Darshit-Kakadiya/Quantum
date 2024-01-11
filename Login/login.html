@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img
+        src="../assets/icons/logo used in header.svg"
+        alt="logo"
+        class="logo"
+      />
+    </nav>
+    <hr class="cyan-line" />
+    <div class="form-container">
+      <div class="form-title">
+        <a href="#" class="form-back"><img src="../assets/icons/back.svg" /></a>
+        <span>Log in with Quantum</span>
+      </div>
+      <div class="role-selector">
+        <span class="role">
+          <input
+            type="radio"
+            class="green-radio"
+            name="role"
+            value="District"
+            checked
+          />
+          <label for="District">District</label>
+        </span>
+        <span class="role">
+          <input
+            type="radio"
+            class="green-radio"
+            name="role"
+            value="Independent school"
+          />
+          <label for="Independent school">Independent school</label>
+        </span>
+      </div>
+      <div class="form-input">
+        <label class="label">State*</label>
+        <select class="form-select">
+          <option class="form-options">Alabama</option>
+          <option class="form-options">Alabama</option>
+          <option class="form-options">Alabama</option>
+        </select>
+      </div>
+      <div class="form-input">
+        <label>District*</label>
+        <select class="form-select">
+          <option class="form-options">Alabama School District</option>
+          <option class="form-options">Alabama School District</option>
+          <option class="form-options">Alabama School District</option>
+        </select>
+      </div>
+      <div class="form-input">
+        <input type="text" placeholder="Username/Email ID*" />
+        <a href="#" class="input-forgot">FORGOT USERNAME?</a>
+      </div>
+      <div class="form-input">
+        <span>
+          <input type="text" placeholder="Password*" /><img
+            src="../assets/icons/preview.svg"
+        /></span>
+        <a href="#" class="input-forgot">FORGOT PASSWORD?</a>
+      </div>
+      <div class="remember-field">
+        <input type="checkbox" value="Remember" checked />
+        <span>Remember Me</span>
+      </div>
+      <div class="submit">
+        <button>LOG IN</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="links">
+        <a>About</a>
+        <a class="divider">Contact Us</a>
+      </div>
+      <div class="site-details">
+        <img
+          src="../assets/icons/logo used in footer.svg"
+          alt="logo"
+          class="footer-logo"
+        />
+        <span class="footer-text divider"
+          >Copyright &copy; 2020-2021<span class="bold"
+            >Zeus Systems Pvt. Ltd.</span
+          >All rights reserved
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

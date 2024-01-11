@@ -1,11 +1,16 @@
-$whiteColor: #ffffff;
 $blackColor: #000000;
 $greenColor: #3fd28b;
 $greenText: #1f7a54;
-$backText: #222222;
+$darkText: #222222;
 $greyText: #666666;
+$lightDarkLine: #0000001f;
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 * {
   font-family: "Quicksand";
@@ -28,8 +33,7 @@ body {
   background-color: #25313f;
   background-blend-mode: overlay;
   height: 56px;
-  display: flex;
-  align-items: center;
+  @include flexCenter;
   justify-content: flex-start;
   padding-left: 28px;
 }
@@ -42,9 +46,7 @@ body {
 
 .links {
     margin-top: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    @include flexCenter;
   gap: 8px;
   font-size: 14px;
   color: $greenText;
@@ -56,15 +58,13 @@ body {
     color: $greenText;
   }
   .divider {
-    border-left: 1px solid #0000001f;
+    border-left: 1px solid $lightDarkLine;
     padding-left: 8px;
   }
 }
 
 .site-details {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenter;
   gap: 20px;
   background-color: #e0e1e1;
   padding: 8px;
@@ -72,7 +72,7 @@ body {
 
 .footer-text {
   font-size: 12px;
-  border-left: 1px solid #0000001f;
+  border-left: 1px solid $lightDarkLine;
   padding-left: 16px;
   color: #616161;
   span {
@@ -103,7 +103,7 @@ body {
     align-items: center;
   }
   span {
-    color: #222222;
+    color: $darkText;
     margin: auto;
   }
 }
@@ -120,7 +120,7 @@ body {
     input[type="radio"] {
       width: 20px;
       height: 20px;
-      accent-color: #1f7a54;
+      accent-color: $greenText;
       cursor: pointer;
     }
     label {
@@ -141,7 +141,7 @@ body {
     margin-top: 5px;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #0000001f;
+    border-bottom: 1px solid $lightDarkLine;
     color: $backText;
     font-size: 16px;
     option {
@@ -154,7 +154,7 @@ body {
     width: auto;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #0000001f;
+    border-bottom: 1px solid $lightDarkLine;
     color: $backText;
     font-size: 16px;
   }
@@ -178,7 +178,7 @@ body {
   input[type="checkbox"] {
     width: 18px;
     height: 18px;
-    accent-color: #1f7a54;
+    accent-color: $greenText;
     cursor: pointer;
     margin-right: 5px;
   }
@@ -191,7 +191,7 @@ body {
     button {
         height: 40px;
         border: none;
-        background-color: #3FD28B;
+        background-color: $greenColor;
         color: #1F2834;
         font-size: 14px;
         cursor: pointer;

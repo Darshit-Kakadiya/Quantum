@@ -2,8 +2,10 @@ $whiteColor: #ffffff;
 $blackColor: #000000;
 $greenColor: #3fd28b;
 $greenText: #1f7a54;
-$backText: #222222;
+$darkText: #222222;
 $greyText: #666666;
+$whiteBackground: #eeeeee;
+$lightDarkLine: #0000001f;
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
@@ -25,17 +27,17 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto auto;
   height: 100vh;
-  background-color: #eeeeee;
+  background-color: $whiteBackground;
 }
 
 select {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #0000001f;
+  border-bottom: 1px solid $lightDarkLine;
   color: $backText;
   font-size: 16px;
   option {
-    background: #eeeeee;
+    background: $whiteBackground;
     color: $backText;
   }
 }
@@ -99,7 +101,7 @@ select {
     color: $greenText;
   }
   .divider {
-    border-left: 1px solid #0000001f;
+    border-left: 1px solid $lightDarkLine;
     padding-left: 8px;
   }
 }
@@ -119,7 +121,7 @@ select {
     width: 16px;
     border-radius: 50%;
     text-align: center;
-    color: #ffffff;
+    color: $whiteColor;
     font-size: 12px;
     top: -14px;
     left: -10px;
@@ -133,8 +135,8 @@ select {
     position: relative;
     height: 16px;
     width: 16px;
-    background-color: #ffffff;
-    color: #222222;
+    background-color: $whiteColor;
+    color: $darkText;
     font-size: 8px;
     top: -20px;
     left: -15px;
@@ -150,7 +152,7 @@ select {
 
 .footer-text {
   font-size: 12px;
-  border-left: 1px solid #0000001f;
+  border-left: 1px solid $lightDarkLine;
   padding-left: 16px;
   color: #616161;
   span {
@@ -159,7 +161,7 @@ select {
   }
 }
 .divider {
-  border-left: 1px solid #0000001f;
+  border-left: 1px solid $lightDarkLine;
 }
 .main {
   margin: 24px;
@@ -182,7 +184,7 @@ select {
       }
     }
     .active {
-      border-bottom: 4px solid #222222;
+      border-bottom: 4px solid $darkText;
     }
   }
   .filter-options {
@@ -208,7 +210,7 @@ select {
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: $whiteColor;
   border-radius: 2px;
   padding: 24px;
   color: $greyText;
@@ -252,14 +254,14 @@ select {
   }
 
   .favourite-disable {
-    fill: #eeeeee;
+    fill: $whiteBackground;
   }
 }
 .highlight {
   color: $greenText;
 }
 .verticle-divider {
-  border-left: 1px solid #0000001f;
+  border-left: 1px solid $lightDarkLine;
   height: 16px;
   margin: 0px 8px;
   padding-left: 8px;
@@ -282,7 +284,7 @@ select {
   }
 }
 hr {
-  background-color: #0000001f;
+  background-color: $lightDarkLine;
   height: 1px;
   margin-bottom: 8px;
   border: none;

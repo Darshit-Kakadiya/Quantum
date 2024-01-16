@@ -7,6 +7,174 @@
   font-weight: 500;
 }
 
+.hidden {
+  display: none;
+}
+
+#hamburgerMenu {
+  width: 280px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 56px;
+  right: 16px;
+  box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.2392156863);
+  border-radius: 2px;
+}
+#hamburgerMenu ul {
+  list-style-type: none;
+}
+#hamburgerMenu ul li {
+  text-transform: capitalize;
+  padding: 16px;
+  font-size: 14px;
+  color: #1f7a54;
+  cursor: pointer;
+}
+#hamburgerMenu ul li:hover {
+  background-color: #f3f3f3;
+}
+#hamburgerMenu ul li:hover ul {
+  display: block;
+}
+#hamburgerMenu ul ul {
+  display: none;
+  list-style-type: none;
+}
+#hamburgerMenu ul ul li {
+  text-transform: capitalize;
+  padding-bottom: 0px;
+}
+
+#announcementPreview {
+  position: absolute;
+  top: 56px;
+  box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.2392156863);
+  border-radius: 2px;
+  right: 60px;
+  width: 315px;
+}
+#announcementPreview .announcements {
+  max-height: 500px;
+  overflow-y: scroll;
+  background-color: #ffffee;
+  font-size: 12px;
+  color: #6e6e6e;
+}
+#announcementPreview .announcements .announcement {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1215686275);
+}
+#announcementPreview .announcements .announcement .announcement-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#announcementPreview .announcements .announcement .announcement-details .announcement-author {
+  color: #222222;
+}
+#announcementPreview .announcements .announcement .announcement-details img {
+  width: 16px;
+  height: 16px;
+}
+#announcementPreview .announcements .announcement .announcement-content {
+  font-size: 14px;
+  color: #222222;
+}
+#announcementPreview .announcements .announcement .announcement-footer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+#announcementPreview .announcements .announcement .announcement-footer img {
+  height: 12px;
+}
+#announcementPreview .announcements .read-announcements {
+  background-color: #ffffff;
+}
+#announcementPreview .buttons {
+  background-color: #ffffff;
+  color: #1f7a54;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2392156863);
+}
+#announcementPreview .buttons span {
+  cursor: pointer;
+  padding: 16px 32px;
+}
+
+#alertPreview {
+  position: absolute;
+  top: 56px;
+  box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.2392156863);
+  border-radius: 2px;
+  right: 100px;
+  width: 315px;
+}
+#alertPreview .alerts {
+  max-height: 500px;
+  overflow-y: scroll;
+  background-color: #ffffee;
+  font-size: 12px;
+  color: #6e6e6e;
+}
+#alertPreview .alerts .alert {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1215686275);
+}
+#alertPreview .alerts .alert .alert-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#alertPreview .alerts .alert .alert-content span {
+  font-size: 14px;
+  color: #222222;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  align-items: flex-start;
+}
+#alertPreview .alerts .alert .alert-content img {
+  width: 16px;
+  height: 16px;
+}
+#alertPreview .alerts .alert .alert-from span {
+  color: #222222;
+}
+#alertPreview .alerts .alert .alert-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#alertPreview .alerts .read-alerts {
+  background-color: #ffffff;
+}
+#alertPreview .buttons {
+  background-color: #ffffff;
+  color: #1f7a54;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2392156863);
+}
+#alertPreview .buttons span {
+  cursor: pointer;
+  padding: 16px 32px;
+}
+
 body {
   display: grid;
   grid-template-rows: auto 1fr auto auto;
@@ -68,8 +236,12 @@ select option {
 .navbar .nav-options li {
   list-style: none;
 }
+.navbar .nav-options li:hover {
+  fill: #f3f3f3;
+}
 .navbar .nav-options .menu-hamburger {
   display: none;
+  height: auto;
 }
 
 .links {
@@ -322,7 +494,7 @@ hr {
   .navbar .nav-options {
     margin-left: auto;
   }
-  .navbar .nav-options .menu-hamburger {
+  .navbar .nav-options #hamburger {
     display: block;
     margin-right: 24px;
   }

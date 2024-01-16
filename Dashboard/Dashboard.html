@@ -21,9 +21,16 @@
         <li class="menu-item"><a>Admin</a></li>
       </ul>
       <ul class="nav-options">
-        <li class="option-item"><img src="../assets/icons/alerts.svg" />
-          <span class="badge">2</span></li>
-        <li class="option-item">
+        <li class="option-item" id="alertIcon">
+          <img src="../assets/icons/alerts.svg" /> <span class="badge">2</span>
+          <div id="alertPreview" class="hidden">
+            <div class="alerts"></div>
+            <div class="buttons">
+              <span>SHOW ALL</span>
+            </div>
+          </div>
+        </li>
+        <li class="option-item" id="announcementIcon">
           <img src="../assets/icons/announcements.svg" />
           <span class="badge">1</span>
         </li>
@@ -31,12 +38,34 @@
           <img class="profile-icon" src="../assets/icons/account_circle.svg" />
           <span class="white-badge">T</span>
         </li>
-        <li class="menu-hamburger">
+        <li class="menu-hamburger" id="hamburger">
           <img src="../assets/icons/hamburger-menu.svg" />
         </li>
       </ul>
-      
     </nav>
+    <div id="hamburgerMenu" class="hidden">
+      <ul>
+        <li>Dashboard</li>
+        <li>
+          Content
+          <ul>
+            <li>Course Catalog</li>
+          </ul>
+        </li>
+        <li>Users</li>
+        <li>Reports</li>
+        <li>Admin</li>
+      </ul>
+    </div>
+
+    <div id="announcementPreview" class="hidden">
+      <div class="announcements"></div>
+      <div class="buttons">
+        <span>SHOW ALL</span>
+        <span class="verticle-divider">CREATE NEW</span>
+      </div>
+    </div>
+    
     <div class="main">
       <div class="options">
         <div class="main-option active">
@@ -236,7 +265,7 @@
         </div> -->
       </div>
     </div>
-    
+
     <footer class="footer">
       <div class="links">
         <a>About</a>

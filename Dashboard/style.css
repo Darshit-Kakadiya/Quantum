@@ -14,6 +14,10 @@ body {
   background-color: #eeeeee;
 }
 
+.disable {
+  opacity: 0.4;
+}
+
 select {
   background: transparent;
   border: none;
@@ -192,9 +196,13 @@ select option {
   margin-right: 24px;
 }
 
+.favourite-off {
+  fill: #eeeeee;
+}
+
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   gap: 24px;
   margin-top: 16px;
 }
@@ -307,7 +315,7 @@ hr {
   cursor: not-allowed;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 798px) {
   .navbar .nav-links {
     display: none;
   }

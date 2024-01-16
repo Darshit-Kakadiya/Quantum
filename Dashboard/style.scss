@@ -30,15 +30,19 @@ body {
   background-color: $whiteBackground;
 }
 
+.disable{
+  opacity: 0.4;
+}
+
 select {
   background: transparent;
   border: none;
   border-bottom: 1px solid $lightDarkLine;
-  color: $backText;
+  color: $darkText;
   font-size: 16px;
   option {
     background: $whiteBackground;
-    color: $backText;
+    color: $darkText;
   }
 }
 
@@ -202,9 +206,13 @@ select {
   }
 }
 
+.favourite-off {
+  fill: $whiteBackground;
+}
+
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   gap: 24px;
   margin-top: 16px;
 }
@@ -245,7 +253,7 @@ select {
   margin-bottom: 8px;
   span {
     font-size: 16px;
-    color: $backText;
+    color: $darkText;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -275,7 +283,7 @@ select {
   gap: 8px;
   margin-bottom: 8px;
   .course-details-text {
-    color: $backText;
+    color: $darkText;
   }
   .dark-text {
     color: $blackColor;
@@ -311,7 +319,7 @@ hr {
     cursor: not-allowed;
   }
 }
-@media (max-width: 1020px) {
+@media (max-width: 798px) {
   .navbar {
     .nav-links {
       display: none;

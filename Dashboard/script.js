@@ -45,7 +45,9 @@ function createCard(course) {
       <div class="card-details">
         <div class="course-title">
           <span>${course.title}</span>
-          <img class=favourite-off src="../assets/icons/favourite.svg" />
+          <img ${
+            !course.buttons.favourite ? `class="favourite-off"` : ""
+          }src="../assets/icons/favourite.svg" />
         </div>
         <div class="course-metadata">
           <span>${course.subject}</span>
@@ -126,21 +128,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const announcementPreview = document.getElementById("announcementPreview");
 
   function showHamburgerMenu() {
-    hamburgerMenu.style.display = 'block';
+    hamburgerMenu.style.display = "block";
   }
 
   function showAlertPreview() {
-    alertPreview.style.display = 'block';
+    alertPreview.style.display = "block";
   }
 
   function showAnnouncementPreview() {
-    announcementPreview.style.display = 'block';  
+    announcementPreview.style.display = "block";
   }
 
   function hideAllPreviews() {
-    hamburgerMenu.style.display = 'none';
-    alertPreview.style.display = 'none';
-    announcementPreview.style.display = 'none';
+    hamburgerMenu.style.display = "none";
+    alertPreview.style.display = "none";
+    announcementPreview.style.display = "none";
   }
 
   hamburgerIcon.addEventListener("mouseover", showHamburgerMenu);

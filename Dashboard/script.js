@@ -126,21 +126,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const announcementPreview = document.getElementById("announcementPreview");
 
   function showHamburgerMenu() {
-    hamburgerMenu.classList.remove("hidden");
+    hamburgerMenu.style.display = 'block';
   }
 
   function showAlertPreview() {
-    alertPreview.classList.remove("hidden");
+    alertPreview.style.display = 'block';
   }
 
   function showAnnouncementPreview() {
-    announcementPreview.classList.remove("hidden");
+    announcementPreview.style.display = 'block';  
   }
 
   function hideAllPreviews() {
-    hamburgerMenu.classList.add("hidden");
-    alertPreview.classList.add("hidden");
-    announcementPreview.classList.add("hidden");
+    hamburgerMenu.style.display = 'none';
+    alertPreview.style.display = 'none';
+    announcementPreview.style.display = 'none';
   }
 
   hamburgerIcon.addEventListener("mouseover", showHamburgerMenu);
